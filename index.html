@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+@font-face {
+font-family: 'deneme'; /* Buraya bir isim verin */
+src: url(assets/fonts/Figtree-VariableFont_wght.ttf); /* .ttf dosyasının yolunu ekleyin */
+}
+    .attribution { 
+      font-size: 11px; 
+      
+      margin-top: auto;
+      }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: deneme;
+    }
+    body{
+      background-color: rgb(255, 204, 0);
+      height: 98vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40%;
+      
+    }
+
+    @media screen and (max-width: 844px) { 
+
+      body{
+        padding: 0;
+      }
+      
+    }
+
+    .anacontainer{
+      border: solid 1px black;
+      border-radius: 20px;
+      background-color: white;
+      padding: 20px;
+      margin-top: auto ;
+      box-shadow: 15px 15px black;
+      scale: 0.7;
+    }
+
+    #yukariresim{
+      border-radius: 10px;
+      width: 400px;
+    }
+
+    #learn{
+      background-color:rgb(255, 204, 0) ;
+      display: inline-block;
+      padding:5px 10px;
+      font-weight: bold;
+      border-radius: 3px;
+      margin: 15px 0;
+    }
+
+    #zey{
+      font-weight: 800;
+      font-size: 30px;
+      margin: 15px 0;
+    }
+
+    #zey:hover{
+      color: rgb(255, 204, 0);
+    }
+
+    #paragraf{
+      color: gray;
+      letter-spacing: 0.8px;
+      line-height: 1.5;
+      word-spacing: 5px;
+      margin-top: 22px;
+      
+    }
+
+    #alt{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    span{
+      font-weight: 800;
+      margin-left: 20px;
+    }
+
+    
+
+    
+
+    
+  
+  
+  
+  
+  
+  </style>
+</head>
+<body>
+
+  <div class="anacontainer">
+
+    <div class="container">
+      <img id="yukariresim" src="assets/images/illustration-article.svg" alt="">
+      <div id="learn">Learning</div>
+      <p>Published 21 Dec 2023</p>
+      <p id="zey">HTML & CSS foundations</p>
+      <p id="paragraf">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div id="alt">
+        <img style="width: 50px;" src="assets/images/image-avatar.webp" alt="Greg">
+        <span>Greg Hooper</span>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">MHK</a>.
+  </div>
+</body>
+</html>
